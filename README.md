@@ -1,7 +1,4 @@
-![](https://img.shields.io/badge/Foundry-v12-informational)
-<!--- Downloads @ Latest Badge -->
-<!--- replace <user>/<repo> with your username/repository -->
-![All Downloads](https://img.shields.io/github/downloads/ChasarooniZ/auto-chat-message-pruner/total?color=5e0000&label=All%20Downloads)
+![](https://img.shields.io/badge/Foundry-v12-informational) ![All Downloads](https://img.shields.io/github/downloads/ChasarooniZ/auto-chat-message-pruner/total?color=5e0000&label=All%20Downloads)
 ![Latest Release Download Count](https://img.shields.io/github/downloads/ChasarooniZ/auto-chat-message-pruner/latest/module.zip)
 
 <!--- Forge Bazaar Install % Badge -->
