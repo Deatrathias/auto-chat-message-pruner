@@ -10,7 +10,8 @@ Hooks.once('init', async function () {
 });
 
 Hooks.once('ready', async function () {
-    Hooks.on('preCreateChatMessage', async (_document, _data, _options, _userId) => {
+    Hooks.on('preCreateChatMessage', async (_document, _data, _options, userId) => {
+        if (game.user.id !== userid) return;
         const maxMessages = game.settings.get("depruner-chat-message-remover", "limit");
         const messages = game.messages.contents;
 
