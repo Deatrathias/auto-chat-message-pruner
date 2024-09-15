@@ -1,34 +1,24 @@
 {
-  "id": "module",
-  "title": "New Module",
-  "description": "",
+  "id": "depruner-chat-message-remover",
+  "title": "Depruner: Automatically Prune Chat Messages",
+  "description": "Automatically deletes the oldest Chat Message after you exceed your limit. Should help performance drastically.",
   "version": "#{VERSION}#",
   "library": "false",
   "manifestPlusVersion": "1.2.0",
   "compatibility": {
-    "minimum": 12,
+    "minimum": 10,
     "verified": 12
   },
   "authors": [
     {
-      "name": "chasarooniZ",
-      "url": "https://github.com/League-of-Foundry-Developers",
-      "discord": "discordID#0001"
+      "name": "chasarooniZ"
     }
   ],
   "relationships": {
     "systems": [],
     "requires": []
   },
-  "esmodules": [
-    "scripts/module.js"
-  ],
-  "scripts": [
-    "scripts/lib/lib.js"
-  ],
-  "styles": [
-    "styles/module.css"
-  ],
+  "esmodules": ["scripts/module.js"],
   "languages": [
     {
       "lang": "en",
