@@ -1,0 +1,11 @@
+{
+  "I18N.LANGUAGE": "ไทย",
+  "depruner-chat-message-remover": {
+    "module-settings": {
+      "limit": {
+        "name": "จำนวนข้อความสูงสุด",
+        "hint": "จำนวนข้อความสูงสุดในบันทึกการสนทนา"
+      }
+    }
+  }
+}

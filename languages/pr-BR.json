@@ -1,0 +1,11 @@
+{
+  "I18N.LANGUAGE": "Português (Brasil)",
+  "depruner-chat-message-remover": {
+    "module-settings": {
+      "limit": {
+        "name": "Nº máximo de mensagens",
+        "hint": "Número máximo de mensagens no registro de chat"
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "I18N.LANGUAGE": "Suomi",
+  "depruner-chat-message-remover": {
+    "module-settings": {
+      "limit": {
+        "name": "Viestien maksimi määrä",
+        "hint": "Maksimi määrä viestejä keskustelulokissa"
+      }
+    }
+  }
+}

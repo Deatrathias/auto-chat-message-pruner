@@ -1,0 +1,11 @@
+{
+  "I18N.LANGUAGE": "Türkçe",
+  "depruner-chat-message-remover": {
+    "module-settings": {
+      "limit": {
+        "name": "Maks. Mesaj Sayısı",
+        "hint": "Sohbet kaydındaki maksimum mesaj sayısı"
+      }
+    }
+  }
+}

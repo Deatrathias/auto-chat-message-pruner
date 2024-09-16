@@ -1,0 +1,11 @@
+{
+  "I18N.LANGUAGE": "简体中文",
+  "depruner-chat-message-remover": {
+    "module-settings": {
+      "limit": {
+        "name": "最大消息数",
+        "hint": "聊天记录中的最大消息数"
+      }
+    }
+  }
+}
