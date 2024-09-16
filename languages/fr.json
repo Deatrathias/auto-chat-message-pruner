@@ -1,0 +1,11 @@
+{
+  "I18N.LANGUAGE": "Français",
+  "depruner-chat-message-remover": {
+    "module-settings": {
+      "limit": {
+        "name": "Nombre max. de messages",
+        "hint": "Nombre maximum de messages dans le journal de discussion"
+      }
+    }
+  }
+}

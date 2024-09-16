@@ -1,0 +1,11 @@
+{
+  "I18N.LANGUAGE": "Deutsch",
+  "depruner-chat-message-remover": {
+    "module-settings": {
+      "limit": {
+        "name": "Max. Anzahl Nachrichten",
+        "hint": "Maximale Anzahl von Nachrichten im Chat-Protokoll"
+      }
+    }
+  }
+}

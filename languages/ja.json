@@ -1,0 +1,11 @@
+{
+  "I18N.LANGUAGE": "日本語",
+  "depruner-chat-message-remover": {
+    "module-settings": {
+      "limit": {
+        "name": "メッセージの最大数",
+        "hint": "チャットログに表示されるメッセージの最大数"
+      }
+    }
+  }
+}

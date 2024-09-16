@@ -1,0 +1,11 @@
+{
+  "I18N.LANGUAGE": "Polski",
+  "depruner-chat-message-remover": {
+    "module-settings": {
+      "limit": {
+        "name": "Maks. liczba wiadomości",
+        "hint": "Maksymalna liczba wiadomości w dzienniku czatu"
+      }
+    }
+  }
+}

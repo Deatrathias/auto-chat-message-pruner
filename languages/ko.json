@@ -1,0 +1,11 @@
+{
+  "I18N.LANGUAGE": "한국어",
+  "depruner-chat-message-remover": {
+    "module-settings": {
+      "limit": {
+        "name": "최대 메시지 수",
+        "hint": "채팅 로그의 최대 메시지 수"
+      }
+    }
+  }
+}

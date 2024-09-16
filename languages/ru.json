@@ -1,0 +1,11 @@
+{
+  "I18N.LANGUAGE": "Русский",
+  "depruner-chat-message-remover": {
+    "module-settings": {
+      "limit": {
+        "name": "Макс. количество сообщений",
+        "hint": "Максимальное количество сообщений в журнале чата"
+      }
+    }
+  }
+}
