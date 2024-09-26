@@ -1,4 +1,4 @@
-Hooks.once('init', async function () {
+Hooks.once('init', async function() {
     game.settings.register("depruner-chat-message-remover", "limit", {
         name: game.i18n.localize("depruner-chat-message-remover.module-settings.limit.name"),
         hint: game.i18n.localize("depruner-chat-message-remover.module-settings.limit.hint"),
@@ -9,7 +9,7 @@ Hooks.once('init', async function () {
     });
 });
 
-Hooks.once('ready', async function () {
+Hooks.once('ready', async function() {
     if (!game.user.isGM) return;
     Hooks.on('preCreateChatMessage', async (_document, _data, _options, _userId) => {
         const maxMessages = game.settings.get("depruner-chat-message-remover", "limit");
@@ -18,9 +18,9 @@ Hooks.once('ready', async function () {
         if (messagesToDelete <= 0) return;
         for (let i = 0; i <= messagesToDelete; i++) {
             const oldestMessage = messages[i];
-if (oldestMessage) {
-            await oldestMessage.delete();
-}
+            if (oldestMessage) {
+                await oldestMessage.delete();
+            }
         }
     });
 });
