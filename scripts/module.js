@@ -19,7 +19,7 @@ Hooks.once('ready', async function() {
         for (let i = 0; i <= messagesToDelete; i++) {
             const oldestMessage = messages[i];
             if (oldestMessage) {
-                await oldestMessage.delete();
+                await oldestMessage?.delete();
             }
         }
     });
