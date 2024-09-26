@@ -1,3 +1,9 @@
+## 1.0.5
+- Added check for if chat message exists before running delete command
+## 1.0.4
+- Removed Languages because it seems to be causing an installation issue
+## 1.0.3
+- Fix manifest issue
 ## 1.0.2
 
 - Added Languages:
