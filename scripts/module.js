@@ -7,20 +7,35 @@ Hooks.once('init', async function() {
         default: 30,
         type: Number,
     });
+	game.settings.register("depruner-chat-message-remover", "threshold", {
+        name: game.i18n.localize("depruner-chat-message-remover.module-settings.threshold.name"),
+        hint: game.i18n.localize("depruner-chat-message-remover.module-settings.threshold.hint"),
+        scope: "world",
+        config: true,
+        default: 40,
+        type: Number,
+    });
 });
+
+var currentlyDeleting = false;
 
 Hooks.once('ready', async function() {
     if (!game.user.isGM) return;
-    Hooks.on('preCreateChatMessage', async (_document, _data, _options, _userId) => {
+    Hooks.on('createChatMessage', async (_document, _options, _userId) => {
+        if (currentlyDeleting)
+            return;
         const maxMessages = game.settings.get("depruner-chat-message-remover", "limit");
+        const threshold = game.settings.get("depruner-chat-message-remover", "threshold");
+        if (maxMessages > threshold)
+            ui.notifications.warn("Message limit higher than threshold!");
         const messages = game.messages.contents;
-        const messagesToDelete = messages.length - maxMessages;
+        if (messages.length < threshold)
+            return;
+        const messagesToDelete = messages.length - Math.min(maxMessages, threshold);
         if (messagesToDelete <= 0) return;
-        for (let i = 0; i <= messagesToDelete; i++) {
-            const oldestMessage = messages[i];
-            if (oldestMessage) {
-                await oldestMessage?.delete();
-            }
-        }
+        let messagesId = messages.slice(0, messagesToDelete).map(m => m.id);
+        currentlyDeleting = true;
+        await ChatMessage.deleteDocuments(messagesId);
+        currentlyDeleting = false;
     });
 });

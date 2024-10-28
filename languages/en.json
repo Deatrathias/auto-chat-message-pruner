@@ -4,7 +4,11 @@
     "module-settings": {
       "limit": {
         "name": "Max # of Messages",
-        "hint": "Max Number of Messages in the chat Log"
+        "hint": "Max Number of Messages to keep in the chat Log"
+      },
+      "threshold": {
+        "name": "Threshold",
+        "hint": "Number of messages required until pruning starts"
       }
     }
   }
